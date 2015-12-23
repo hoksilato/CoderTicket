@@ -9,4 +9,8 @@ class Event < ActiveRecord::Base
   def self.upcoming
     where('starts_at > ?', DateTime.now)
   end
+
+  def self.search(search)
+    where('name LIKE ? OR extended_html_description LIKE ?', "%#{search}%", "%#{search}%")
+  end
 end

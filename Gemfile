@@ -45,6 +45,9 @@ group :development, :test do
 
   # RSpec test framework
   gem 'rspec-rails', '~> 3.0'
+
+  # To test with simulated browser
+  gem "capybara"
 end
 
 group :development do

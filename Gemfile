@@ -68,3 +68,6 @@ gem 'coffee-script-source', '1.8.0'
 gem 'rails_12factor', group: 'production'
 
 gem 'simplecov', :require => false, :group => :test
+
+# Email validator
+gem 'email_validator'

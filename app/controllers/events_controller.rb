@@ -3,9 +3,9 @@ class EventsController < ApplicationController
     @search = params[:search].strip # Remove all leading and trailing whitespace
 
     if @search.empty?
-      @events = Event.all
+      @events = Event.upcoming
     else
-      @events = Event.where('name LIKE ? OR extended_html_description LIKE ?', "%#{@search}%", "%#{@search}%").all
+      @events = Event.upcoming.where('name LIKE ? OR extended_html_description LIKE ?', "%#{@search}%", "%#{@search}%").all
     end
   end
 

@@ -48,6 +48,9 @@ group :development, :test do
 
   # To test with simulated browser
   gem "capybara"
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
 end
 
 group :development do

@@ -4,11 +4,9 @@
     <%= render partial: "shared/flash", flash: flash %>
   </div>
 
-  <% @events.in_groups_of(3) do |g| %>
   <div class="row">
-    <% g.compact.each do |e| %>
-        <%= render partial: 'card', locals: {event: e} %>
-    <% end %>
+    <div class="col-md-4 col-sm-6" style="float: none; margin: 0 auto;">
+    <%= render 'form' %>
+    </div>
   </div>
-  <% end %>
 </div>

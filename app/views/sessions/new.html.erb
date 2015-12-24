@@ -1,0 +1,30 @@
+<%= render partial: "shared/banner" %>
+<div class="container-fluid events-list">
+  <div class="row">
+    <%= render partial: "shared/flash", flash: flash %>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-sm-6" style="float: none; margin: 0 auto;">
+    <%= simple_form_for :session, :url => sessions_path, html: {class: 'contact-form"'} do |f| %>
+
+      <div class="col-md-12 col-sm-12">
+        <div class="form-group">
+          <%= f.input :email, placeholder: 'Email', class: 'form-control', required: 'required' %>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-sm-12">
+        <div class="form-group">
+          <%= f.input :password, placeholder: 'Password', class: 'form-control', required: 'required' %>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-12">
+        <%= f.submit 'Sign In', class: 'btn btn-primary' %>
+      </div>
+
+    <% end %>
+    </div>
+  </div>
+</div>

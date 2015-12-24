@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature "Events' feature", type: :feature do
   before do
     @event = Event.create!(
-      starts_at: 1.day.ago,
+      starts_at: 2.day.from_now,
       extended_html_description: 'event have search string',
       name: 'Event',
       venue: Venue.create!(name: 'Venue'),

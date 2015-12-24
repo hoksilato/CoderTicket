@@ -29,7 +29,7 @@ The following **required** functionality is complete:
 * [ ] Users can buy tickets to an event, choose the types of tickets, and the quantity of tickets.
 * [ ] Users cannot buy more tickets than the quantity available.
 * [ ] Users can only buy up to 10 of a ticket type at a time.
-* [ ] Users cannot buy tickets to events that occur in the past. 
+* [x] Users cannot buy tickets to events that occur in the past. 
 
 #### Users
 
